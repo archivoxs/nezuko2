@@ -1,0 +1,14 @@
+{
+  "name": "nezuko-chan-store",
+  "version": "1.0.0",
+  "description": "Css grid coding",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch sass -o css"
+  },
+  "author": "fennixs",
+  "license": "autodidact",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

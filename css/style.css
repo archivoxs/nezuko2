@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "DEMON_NI";
+  src: url(../fontdemon/DEMON_NI.TTF);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* img {
+  width: 195px;
+  height: 195px;
+}
+
+body {
+  background-color: black;
+  background-image: url(../img/trama.png);
+  background-size: contain;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+}
+
+main {
+  background-color: pink;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+}
+main header {
+  font-family: DEMON_NI;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 5px;
+}
+main header h1 {
+  font-size: 65px;
+  margin: 10px;
+}
+@media (max-width: 762px) {
+  main header h1 {
+    font-size: 45px;
+  }
+}
+main header h2 {
+  font-size: 40px;
+  margin: 10px;
+}
+@media (max-width: 762px) {
+  main header h2 {
+    font-size: 28px;
+  }
+}
+main nav {
+  position: sticky;
+  top: 3px;
+  left: 0;
+  background: #eea3a3;
+  border-radius: 10px;
+  box-shadow: black 0 0 15px;
+  margin: 0 5px;
+}
+main nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+main nav li {
+  margin: 8px 14px;
+  padding: 0 3px;
+}
+@media (max-width: 762px) {
+  main nav li {
+    margin: 5px;
+  }
+}
+main nav a {
+  font-size: 25px;
+  text-decoration: none;
+}
+@media (max-width: 762px) {
+  main nav a {
+    font-size: 18px;
+  }
+}
+main nav a:hover {
+  border: red 2px solid;
+  text-shadow: black 2px 2px 2px;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1366px) {
+  main section {
+    flex-direction: row;
+  }
+}
+main section ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+@media (max-width: 762px) {
+  main section ul {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1366px) {
+  main section ul {
+    margin: 0;
+  }
+}
+main section li {
+  border: black solid 1px;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+main section li p {
+  padding: 3px;
+}
+@media (max-width: 762px) {
+  main section li {
+    margin-top: 20px;
+  }
+}
+main footer {
+  background: gray;
+  font-size: 20px;
+}
+@media (max-width: 700px) {
+  main footer {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
