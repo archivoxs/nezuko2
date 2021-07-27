@@ -1,17 +1,18 @@
 @font-face {
-  font-family: "DEMON_NI";
-  src: url(../fontdemon/DEMON_NI.TTF);
-}
+  font-family: 'DEMON_NI';
+  src: url(../fontdemon/DEMON_NI.TTF); }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 * img {
   width: 195px;
-  height: 195px;
-}
+  height: 195px; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   background-color: black;
@@ -21,128 +22,143 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 400px;
-}
+  min-width: 400px; }
+  body main {
+    background-color: pink;
+    text-align: center;
+    width: 70%;
+    height: 100%; }
+    body main header {
+      font-family: DEMON_NI;
+      display: flex;
+      flex-direction: column;
+      letter-spacing: 5px; }
+      body main header h1 {
+        font-size: 65px;
+        margin: 10px;
+        text-align: left; }
+        @media (max-width: 762px) {
+          body main header h1 {
+            font-size: 45px; } }
+      body main header h2 {
+        font-size: 40px;
+        margin: 10px;
+        text-align: right; }
+        @media (max-width: 762px) {
+          body main header h2 {
+            font-size: 28px; } }
+    body main nav {
+      position: sticky;
+      top: 3px;
+      left: 0;
+      background: #eea3a3;
+      border-radius: 10px;
+      box-shadow: black 0 0 15px;
+      margin: 5px; }
+      body main nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center; }
+      body main nav li {
+        margin: 8px 14px;
+        padding: 0 3px; }
+        @media (max-width: 762px) {
+          body main nav li {
+            margin: 5px; } }
+      body main nav a {
+        font-size: 25px;
+        text-decoration: none;
+        padding: 6px; }
+        @media (max-width: 762px) {
+          body main nav a {
+            font-size: 18px; } }
+        body main nav a:hover {
+          border: red 1px solid;
+          border-radius: 5px;
+          padding: 2px 5px;
+          color: azure;
+          background-color: black;
+          transition: .1s all; }
+    body main section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media (min-width: 1366px) {
+        body main section {
+          flex-direction: row; } }
+      body main section ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin: 25px; }
+        @media (max-width: 762px) {
+          body main section ul {
+            flex-direction: column; } }
+        @media (min-width: 1366px) {
+          body main section ul {
+            margin: 0; } }
+      body main section li {
+        border: black solid 3px;
+        border-radius: 10px;
+        margin: 15px; }
+        body main section li div img {
+          background-color: blueviolet;
+          border: solid black 1px; }
+        body main section li p {
+          padding: 3px; }
+        body main section li button {
+          color: white;
+          background-color: black;
+          border: 1px solid red;
+          border-radius: 10px;
+          padding: 3px 5px;
+          margin: 2px 3px; }
+        @media (max-width: 762px) {
+          body main section li {
+            margin-top: 20px; } }
+    body main footer {
+      background: #eea3a3;
+      border-radius: 10px;
+      box-shadow: black 0 0 15px;
+      margin: 15px 5px 5px 5px;
+      font-size: 20px; }
+      @media (max-width: 700px) {
+        body main footer {
+          font-size: 18px; } }
 
-main {
-  background-color: pink;
-  text-align: center;
-  width: 70%;
-  height: 100%;
-}
-main header {
-  font-family: DEMON_NI;
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 5px;
-}
-main header h1 {
-  font-size: 65px;
-  margin: 10px;
-}
-@media (max-width: 762px) {
-  main header h1 {
-    font-size: 45px;
-  }
-}
-main header h2 {
-  font-size: 40px;
-  margin: 10px;
-}
-@media (max-width: 762px) {
-  main header h2 {
-    font-size: 28px;
-  }
-}
-main nav {
-  position: sticky;
-  top: 3px;
-  left: 0;
-  background: #eea3a3;
-  border-radius: 10px;
-  box-shadow: black 0 0 15px;
-  margin: 0 5px;
-}
-main nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-}
-main nav li {
-  margin: 8px 14px;
-  padding: 0 3px;
-}
-@media (max-width: 762px) {
-  main nav li {
-    margin: 5px;
-  }
-}
-main nav a {
-  font-size: 25px;
-  text-decoration: none;
-}
-@media (max-width: 762px) {
-  main nav a {
-    font-size: 18px;
-  }
-}
-main nav a:hover {
-  border: red 2px solid;
-  text-shadow: black 2px 2px 2px;
-}
-main section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 1366px) {
-  main section {
-    flex-direction: row;
-  }
-}
-main section ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  margin: 25px;
-}
-@media (max-width: 762px) {
-  main section ul {
-    flex-direction: column;
-  }
-}
-@media (min-width: 1366px) {
-  main section ul {
-    margin: 0;
-  }
-}
-main section li {
-  border: black solid 1px;
-  width: 200px;
-  height: 200px;
-  margin: 15px;
-}
-main section li p {
-  padding: 3px;
-}
-@media (max-width: 762px) {
-  main section li {
-    margin-top: 20px;
-  }
-}
-main footer {
-  background: gray;
-  font-size: 20px;
-}
-@media (max-width: 700px) {
-  main footer {
-    font-size: 18px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+.body-form {
+  height: 100vh; }
+  .body-form .main-form .form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    opacity: .8;
+    border: 2px solid red;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 25px; }
+    @media (max-width: 762px) {
+      .body-form .main-form .form {
+        width: auto;
+        height: auto; } }
+    .body-form .main-form .form ul {
+      justify-content: center;
+      list-style: none; }
+      .body-form .main-form .form ul button {
+        color: white;
+        background-color: #4d4d4d;
+        border: 1px solid red;
+        border-radius: 15px;
+        padding: 5px 10px;
+        box-shadow: #4d4d4d 0 0 10px; }
+      .body-form .main-form .form ul li {
+        margin: 10px 10px; }
+        .body-form .main-form .form ul li label {
+          margin: 6px 16px; }

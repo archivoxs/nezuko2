@@ -11,6 +11,9 @@
     width: 195px;
     height: 195px;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: black;
     background-image: url(../img/trama.png);
@@ -20,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 400px;
-}
+
 
     main {
         background-color: pink;
@@ -31,10 +34,16 @@ body {
             display: flex;
             flex-direction: column;
             letter-spacing: 5px;
-            h1 {font-size: 65px;margin: 10px;
-                @media (max-width: 762px){font-size: 45px;}}
-            h2{font-size: 40px;margin: 10px;
-                @media (max-width: 762px){font-size: 28px;}}
+            h1 {font-size: 65px;
+                margin: 10px;
+                text-align: left;
+                @media (max-width: 762px){font-size: 45px;}
+            }
+            h2{font-size: 40px; 
+               margin: 10px;
+               text-align: right;
+                @media (max-width: 762px){font-size: 28px;}
+            }
         }
         nav {position: sticky;
             top: 3px;
@@ -42,13 +51,12 @@ body {
             background: rgb(238, 163, 163);
             border-radius: 10px;
             box-shadow: black 0 0 15px;
-            margin: 0 5px;
-            
+            margin: 5px;
             ul {
                 display: flex;
                 flex-direction: row;
                 list-style: none;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
             }
             li {
@@ -59,8 +67,15 @@ body {
             a {
                 font-size: 25px;
                 text-decoration: none;
+                padding: 6px;
                 @media (max-width: 762px){font-size: 18px;}
-            &:hover { border: red 2px solid;text-shadow: black 2px 2px 2px;}
+            &:hover {border: red 1px solid;
+                    border-radius: 5px;
+                    padding: 2px 5px;
+                    color:azure;
+                    background-color: rgb(0, 0, 0);
+                    transition: .1s all;
+                   }
             }
         }
         section{
@@ -78,20 +93,88 @@ body {
                 margin: 25px;
                 @media(max-width: 762px){flex-direction: column;}
                 @media(min-width: 1366px){margin: 0;}
-               
                 }
-                li {border: black solid 1px;
-                    width: 200px;
-                    height: 200px;
+                li {border: black solid 3px;
+                    border-radius: 10px;
                     margin: 15px;
+                    div img {background-color: blueviolet;
+                        border: solid black 1px;}
                      p {padding: 3px;}
+                     button {
+                         color: white;
+                         background-color: black;
+                         border: 1px solid red;
+                         border-radius: 10px;
+                         padding: 3px 5px;
+                         margin: 2px 3px;
+                     }
                      @media(max-width: 762px){margin-top: 20px;}
                  }
         }
         footer {
-            background: gray ;
+            background: rgb(238, 163, 163);
+            border-radius: 10px;
+            box-shadow: black 0 0 15px;
+            margin: 15px 5px 5px 5px;
             font-size: 20px;
             @media (max-width: 700px){font-size: 18px;}
         }
 
     }
+
+
+
+}
+//index2
+.body-form {
+
+        height: 100vh;
+        .main-form{
+
+        
+            .form {
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    background-color: black;
+                    opacity: .8;
+                    border: 2px solid red;
+                    border-radius: 15px;
+                    margin: 15px;
+                    padding: 25px;
+                    @media(max-width: 762px){
+                        width: auto;
+                        height: auto;
+
+                    }
+                    ul {
+                        justify-content: center;
+                        list-style: none;
+                        button {
+                            color: white;
+                            background-color: rgb(77, 77, 77);
+                            border: 1px solid red;
+                            border-radius: 15px;
+                            padding: 5px 10px;
+                            box-shadow: rgb(77, 77, 77)  0 0 10px;
+                        }
+                        li{
+                            margin: 10px 10px;
+                            label {
+                                margin: 6px 16px;
+
+                            }
+                        }
+                    
+                    }       
+            }
+        
+        }            
+
+
+
+}
+
+
+
