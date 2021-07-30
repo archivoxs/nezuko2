@@ -19,6 +19,7 @@ body {
   background-image: url(../img/trama.png);
   background-size: contain;
   background-repeat: repeat;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,32 +134,51 @@ body {
 
 .body-form {
   height: 100vh; }
-  .body-form .main-form .form {
-    height: 100vh;
+  .body-form .main-form .h1-form {
+    font-size: 45px; }
+    @media (max-width: 762px) {
+      .body-form .main-form .h1-form {
+        font-size: 28px; } }
+  .body-form .main-form .form-container {
     display: flex;
     justify-content: center;
-    color: white;
-    background-color: black;
-    opacity: .8;
-    border: 2px solid red;
-    border-radius: 15px;
-    margin: 15px;
-    padding: 25px; }
-    @media (max-width: 762px) {
-      .body-form .main-form .form {
-        width: auto;
-        height: auto; } }
-    .body-form .main-form .form ul {
+    align-items: center; }
+    .body-form .main-form .form-container .form {
+      height: 20rem;
+      width: 35rem;
+      display: flex;
       justify-content: center;
-      list-style: none; }
-      .body-form .main-form .form ul button {
-        color: white;
-        background-color: #4d4d4d;
-        border: 1px solid red;
-        border-radius: 15px;
-        padding: 5px 10px;
-        box-shadow: #4d4d4d 0 0 10px; }
-      .body-form .main-form .form ul li {
-        margin: 10px 10px; }
-        .body-form .main-form .form ul li label {
-          margin: 6px 16px; }
+      align-items: center;
+      color: white;
+      background-color: black;
+      opacity: .8;
+      border: 2px solid red;
+      border-radius: 15px;
+      margin: 15px;
+      padding: 25px; }
+      @media (max-width: 762px) {
+        .body-form .main-form .form-container .form {
+          width: auto;
+          height: auto; } }
+      .body-form .main-form .form-container .form ul {
+        justify-content: center;
+        list-style: none; }
+        .body-form .main-form .form-container .form ul button {
+          color: white;
+          background-color: #4d4d4d;
+          border: 1px solid red;
+          border-radius: 15px;
+          padding: 5px 10px;
+          box-shadow: #4d4d4d 0 0 10px; }
+        .body-form .main-form .form-container .form ul li {
+          margin: 10px 10px; }
+          .body-form .main-form .form-container .form ul li label {
+            margin: 6px 16px; }
+  .body-form .main-form .footer-form {
+    width: 69.5%;
+    position: absolute;
+    bottom: 0;
+    text-align: center; }
+    @media (max-width: 762px) {
+      .body-form .main-form .footer-form {
+        font-size: 14px; } }
