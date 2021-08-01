@@ -1,7 +1,7 @@
 {
   "name": "nezuko-chan-store",
   "version": "1.0.0",
-  "description": "Css grid coding",
+  "description": "Css flex coding",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass --watch sass -o css"

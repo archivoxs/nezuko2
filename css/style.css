@@ -20,18 +20,32 @@ body {
   background-size: contain;
   background-repeat: repeat;
   background-position: center center;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 400px; }
+  body .fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f80606;
+    color: white;
+    border: 3px solid #00ff2a;
+    border-radius: 50%; }
+    body .fixed a {
+      color: white;
+      text-decoration: none; }
   body main {
     background-color: pink;
     text-align: center;
     width: 70%;
     height: 100%; }
-    @media (orientation: landscape) {
-      body main {
-        height: 150%; } }
     body main header {
       font-family: DEMON_NI;
       display: flex;
@@ -74,7 +88,8 @@ body {
       body main nav a {
         font-size: 25px;
         text-decoration: none;
-        padding: 6px; }
+        padding: 6px;
+        font-weight: bolder; }
         @media (max-width: 762px) {
           body main nav a {
             font-size: 18px; } }
@@ -107,21 +122,32 @@ body {
           body main section ul {
             margin: 0; } }
       body main section li {
-        border: black solid 3px;
-        border-radius: 10px;
+        background-color: #bebaba;
+        border: #353030 solid 3px;
+        border-radius: 20px;
+        box-shadow: black 0 0 15px;
         margin: 15px; }
         body main section li div img {
           background-color: blueviolet;
-          border: solid black 1px; }
+          border: solid black 1px;
+          border-radius: 15px; }
         body main section li p {
-          padding: 3px; }
+          padding: 3px;
+          font-style: italic;
+          text-transform: uppercase;
+          font-weight: bolder; }
         body main section li button {
           color: white;
           background-color: black;
           border: 1px solid red;
           border-radius: 10px;
-          padding: 3px 5px;
-          margin: 2px 3px; }
+          padding: 5px 7px;
+          margin: 5px 3px; }
+          body main section li button:hover {
+            color: black;
+            background-color: #999595;
+            border: 1px solid #ff00aa;
+            font-weight: bolder; }
         @media (max-width: 762px) {
           body main section li {
             margin-top: 20px; } }
@@ -143,6 +169,7 @@ body {
       .body-form .main-form .h1-form {
         font-size: 28px; } }
   .body-form .main-form .form-container {
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -163,9 +190,6 @@ body {
         .body-form .main-form .form-container .form {
           width: auto;
           height: auto; } }
-      @media (orientation: landscape) {
-        .body-form .main-form .form-container .form {
-          height: 150%; } }
       .body-form .main-form .form-container .form ul {
         justify-content: center;
         list-style: none; }
@@ -187,4 +211,5 @@ body {
     text-align: center; }
     @media (max-width: 762px) {
       .body-form .main-form .footer-form {
-        font-size: 14px; } }
+        font-size: 14px;
+        width: 68%; } }

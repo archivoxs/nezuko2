@@ -20,10 +20,30 @@ body {
     background-size: contain;
     background-repeat: repeat;
     background-position: center center;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 400px;
+    .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(248, 6, 6);
+        color: white;
+        border:3px solid rgb(0, 255, 42);
+        border-radius: 50%;
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+    }
 
 
     main {
@@ -31,10 +51,6 @@ body {
         text-align: center;
         width: 70%;
         height: 100%;
-        @media (orientation: landscape) {
-            height: 150%;
-            }
-
         header {font-family: DEMON_NI;
             display: flex;
             flex-direction: column;
@@ -73,6 +89,7 @@ body {
                 font-size: 25px;
                 text-decoration: none;
                 padding: 6px;
+                font-weight: bolder;
                 @media (max-width: 762px){font-size: 18px;}
             &:hover {border: red 1px solid;
                     border-radius: 5px;
@@ -99,20 +116,35 @@ body {
                 @media(max-width: 762px){flex-direction: column;}
                 @media(min-width: 1366px){margin: 0;}
                 }
-                li {border: black solid 3px;
-                    border-radius: 10px;
+                li {background-color: rgb(190, 186, 186);
+                    border: rgb(53, 48, 48) solid 3px;
+                    border-radius: 20px;
+                    box-shadow: black 0 0 15px;
                     margin: 15px;
                     div img {background-color: blueviolet;
-                        border: solid black 1px;}
-                     p {padding: 3px;}
+                        border: solid black 1px;
+                        border-radius: 15px;}
+                     p {padding: 3px;
+                        font-style: italic;
+                        text-transform: uppercase;
+                        font-weight: bolder;
+
+                    }
                      button {
                          color: white;
                          background-color: black;
                          border: 1px solid red;
                          border-radius: 10px;
-                         padding: 3px 5px;
-                         margin: 2px 3px;
+                         padding: 5px 7px;
+                         margin: 5px 3px;
+                         &:hover {
+                            color: rgb(0, 0, 0);
+                            background-color: rgb(153, 149, 149);
+                            border: 1px solid rgb(255, 0, 170);
+                            font-weight: bolder;
+                        }
                      }
+                     
                      @media(max-width: 762px){margin-top: 20px;}
                  }
         }
@@ -139,6 +171,7 @@ body {
                 @media (max-width:762px){font-size: 28px;}
         }
            .form-container{
+                    width: auto;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -158,10 +191,9 @@ body {
                             padding: 25px;
                             @media(max-width: 700px){
                                 width: auto;
-                                height: auto;}
-                                @media (orientation: landscape) {
-                                    height: 150%;
-                                    }
+                                height: auto;
+
+                            }
                             ul {
                                 justify-content: center;
                                 list-style: none;
@@ -180,8 +212,8 @@ body {
 
                                     }
                                 }
-                            
-                            }       
+
+                            }
                     }
             }
             .footer-form{
@@ -191,12 +223,11 @@ body {
                 text-align: center;
                 @media (max-width: 762px){
                     font-size: 14px;
+                    width: 68%;
                 }
-                    
-                
 
             }
-        }            
+        }
 
 
 
