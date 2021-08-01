@@ -31,6 +31,10 @@ body {
         text-align: center;
         width: 70%;
         height: 100%;
+        @media (orientation: landscape) {
+            height: 150%;
+            }
+
         header {font-family: DEMON_NI;
             display: flex;
             flex-direction: column;
@@ -152,11 +156,12 @@ body {
                             border-radius: 15px;
                             margin: 15px;
                             padding: 25px;
-                            @media(max-width: 762px){
+                            @media(max-width: 700px){
                                 width: auto;
-                                height: auto;
-
-                            }
+                                height: auto;}
+                                @media (orientation: landscape) {
+                                    height: 150%;
+                                    }
                             ul {
                                 justify-content: center;
                                 list-style: none;

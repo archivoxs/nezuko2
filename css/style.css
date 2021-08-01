@@ -29,6 +29,9 @@ body {
     text-align: center;
     width: 70%;
     height: 100%; }
+    @media (orientation: landscape) {
+      body main {
+        height: 150%; } }
     body main header {
       font-family: DEMON_NI;
       display: flex;
@@ -156,10 +159,13 @@ body {
       border-radius: 15px;
       margin: 15px;
       padding: 25px; }
-      @media (max-width: 762px) {
+      @media (max-width: 700px) {
         .body-form .main-form .form-container .form {
           width: auto;
           height: auto; } }
+      @media (orientation: landscape) {
+        .body-form .main-form .form-container .form {
+          height: 150%; } }
       .body-form .main-form .form-container .form ul {
         justify-content: center;
         list-style: none; }
