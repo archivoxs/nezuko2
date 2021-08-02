@@ -1,6 +1,6 @@
 @font-face {
-    font-family:'DEMON_NI'  ;
-    src: url(../fontdemon/DEMON_NI.TTF);
+    font-family:'Cattedrale'  ;
+    src: url(../fontdemon/Cattedrale.ttf);
 }
 *{
     margin: 0;
@@ -51,16 +51,16 @@ body {
         text-align: center;
         width: 70%;
         height: 100%;
-        header {font-family: DEMON_NI;
+        header {font-family: Cattedrale;
             display: flex;
             flex-direction: column;
             letter-spacing: 5px;
-            h1 {font-size: 65px;
+            h1 {font-size: 85px;
                 margin: 10px;
                 text-align: left;
-                @media (max-width: 762px){font-size: 45px;}
+                @media (max-width: 762px){font-size: 40px;}
             }
-            h2{font-size: 40px; 
+            h2{font-size: 55px; 
                margin: 10px;
                text-align: right;
                 @media (max-width: 762px){font-size: 28px;}
