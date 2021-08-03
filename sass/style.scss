@@ -58,11 +58,13 @@ body {
             h1 {font-size: 85px;
                 margin: 10px;
                 text-align: left;
+                text-shadow: rgb(231, 88, 231) 0 0 15px;
                 @media (max-width: 762px){font-size: 40px;}
             }
             h2{font-size: 55px; 
                margin: 10px;
                text-align: right;
+               text-shadow: rgb(231, 88, 231) 0 0 15px;
                 @media (max-width: 762px){font-size: 28px;}
             }
         }
@@ -222,7 +224,7 @@ body {
                 bottom: 0;
                 text-align: center;
                 @media (max-width: 762px){
-                    font-size: 14px;
+                    font-size: 18px;
                     width: 68%;
                 }
 
